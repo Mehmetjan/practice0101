@@ -1,0 +1,46 @@
+package stepDefinitions;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import pageObjects.RegisterPage;
+
+
+
+public class RegisterSteps {
+	
+	
+	WebDriver driver;
+	@Given("user upen url")
+	public void user_upen(String url) {
+		System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\Drivers\\chromedriver.exe");
+	    driver= new ChromeDriver();
+	    driver.manage().window().maximize();
+	     driver.get("http://automationpractice.com");
+	    
+	}
+
+	@When("user on the home page")
+	public void user_on_the_home_page() {
+	   
+	}
+
+	@Then("clcik on sign in button")
+	public void clcik_on_sign_in_button() {
+	   
+	}
+
+	@Then("user enter {string}")
+	public void user_enter(String email) {
+	    
+	}
+
+	@Then("click on Createa account button")
+	public void click_on_createa_account_button() {
+	   
+	}
+
+
+}

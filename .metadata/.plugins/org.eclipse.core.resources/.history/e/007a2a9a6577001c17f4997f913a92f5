@@ -1,0 +1,15 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class DBconnectionMySQL {
+
+	public static void main(String[] args) {
+		   String url = "jdbc:MySQL://localhost/sampledb";
+		   String username = mehmet;
+		   String password = "password";
+		
+		Connection conn = DriverManager.getConnection (url, userName, password);
+
+	}
+
+}

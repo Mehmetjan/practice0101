@@ -1,0 +1,36 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+
+public class DBconnectionMySQL {
+
+	public static void main(String[] args) throws SQLException {
+		   String url = "jdbc:MySQL://localhost/sampledb";
+		   String username = "mehmet";
+		   String password = "password";
+		
+		Connection conn = DriverManager.getConnection (url, username, password);
+		Statement stmt ;
+        ResultSet rs ;
+
+         
+          stmt = conn.createStatement();
+          rs =  stmt.executeQuery("select * from employee");
+          System.out.println(rs.toString());
+         
+          
+         
+            
+          
+          
+
+	}
+
+}

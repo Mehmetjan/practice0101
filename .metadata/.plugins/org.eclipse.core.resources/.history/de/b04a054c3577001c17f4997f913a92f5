@@ -1,0 +1,19 @@
+package com.sampleSpring.SampleSpring.bean;
+
+public class Course {
+
+	private int id;
+	private String name;
+	private String sunbame;
+	public Course(int id, String name, String sunbame) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.sunbame = sunbame;
+	}
+	@Override
+	public String toString() {
+		return "Course [id=" + id + ", name=" + name + ", sunbame=" + sunbame + "]";
+	}
+	
+}

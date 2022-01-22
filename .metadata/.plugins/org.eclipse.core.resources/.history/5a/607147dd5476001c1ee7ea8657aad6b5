@@ -1,0 +1,14 @@
+#this is sign up feature
+Feature: sign up
+Scenario: sign up
+When user enter <email>
+And click on Createa account button
+Then select gender
+And enter <firstName> and <lastName>
+And enter <password>
+And select date
+Then fill out address
+And enter message
+And enter phone number
+Then click on Register button
+

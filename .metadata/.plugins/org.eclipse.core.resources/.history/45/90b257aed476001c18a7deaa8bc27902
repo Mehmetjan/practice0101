@@ -1,0 +1,43 @@
+package stepDefinitions;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import pageObjects.RegisterPage;
+
+
+
+
+
+public class RegisterSteps {
+	WebDriver driver;
+	RegisterPage rg = new RegisterPage(driver);
+	
+	@Given("user upen url")
+	public void user_upen_url() {
+	    
+	}
+
+	@When("user on the home page")
+	public void user_on_the_home_page() {
+	     
+	}
+
+	@Then("clcik on sign in button")
+	public void clcik_on_sign_in_button() {
+	     
+	}
+
+	@Then("user enter {string}")
+	public void user_enter(String string) {
+	     
+	}
+
+	@Then("click on Createa account button")
+	public void click_on_createa_account_button() {
+	     
+	}
+
+}

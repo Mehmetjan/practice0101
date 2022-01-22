@@ -1,0 +1,5 @@
+package com.sampleSpring.SampleSpring.bean;
+
+public class Course {
+
+}

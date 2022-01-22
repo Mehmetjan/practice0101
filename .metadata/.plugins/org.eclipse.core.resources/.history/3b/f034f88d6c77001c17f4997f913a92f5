@@ -1,0 +1,41 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+
+
+public class DBconnectionMySQL {
+
+	public static void main(String[] args) throws SQLException {
+		   String url = "jdbc:MySQL://localhost/sampledb";
+		   String username = "mehmet";
+		   String password = "password";
+		
+		Connection conn = DriverManager.getConnection (url, username, password);
+		System.out.println("connected");
+		Statement stmt ;
+        ResultSet rs ;
+
+         
+          stmt = conn.createStatement();
+          rs =  stmt.executeQuery("select * from employee");
+         
+          while (rs.next()) {
+        System.out.print(rs.getInt("emp_id")+"\t");
+        System.out.print(rs.getString("name")+"\t");
+        System.out.print(rs.getInt("age")+"\t");
+        System.out.println(rs.getInt("salary")+"\t");
+         
+          }
+          conn.close();
+          String quary =("select name from employee where emp_id=6");
+            
+          ResultSet rs2=stmt.executeQuery(quary);
+          System.out.println(rs2.toString());
+          
+
+	}
+
+}

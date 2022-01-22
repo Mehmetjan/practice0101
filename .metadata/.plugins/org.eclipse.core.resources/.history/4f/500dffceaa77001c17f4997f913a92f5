@@ -1,0 +1,13 @@
+
+public class ConnectPerson {
+
+	public static void main(String[] args) {
+		 String url = "jdbc:MySQL://localhost/person";
+		 String username="mehmet";
+		 String password= "password";
+		 
+		 Connection conn = DriverManage.getConnection(url,username,password);
+
+	}
+
+}

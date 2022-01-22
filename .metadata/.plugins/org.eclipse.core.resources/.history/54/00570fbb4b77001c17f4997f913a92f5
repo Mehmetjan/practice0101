@@ -1,0 +1,18 @@
+package com.sampleSpring.SampleSpring.Courses.Controller;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.sampleSpring.SampleSpring.bean.Course;
+
+public class CourseController {
+// http://localhost:8080/courses
+	@GetMapping("/courses")
+	public List<Course> getAllCourses(){
+		return Arrays.asList(new Course(1,"math","advanced math"));
+	}
+	
+	
+}
